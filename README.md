@@ -1,7 +1,10 @@
-### run gunicorn as http/https
+### run/stop gunicorn as http/https
 see gunicorn how-to: [logging](http://docs.gunicorn.org/en/latest/settings.html#logging)
 ```shell
-# run at top of git directory, as user 'oakridge'
+# run cmd at top of git directory, as user 'oakridge'
+
+# see if gunicorn is running
+ps -ef | grep gunicorn
 
 # develop run 
 gunicorn --reload --bind 0.0.0.0:2018 src.server:api
@@ -11,6 +14,9 @@ gunicorn --check-config -c production.cfg.py src.server:api
 
 # production deploy
 gunicorn -c production.cfg.py src.server:api
+
+# stop gunicorn
+kill -SIGTERM $(cat /tmp/cloud_api.pid)
 ```
 
 ### API usage
