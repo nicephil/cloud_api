@@ -1,7 +1,16 @@
-### run gunicorn as http
+### run gunicorn as http/https
+see gunicorn how-to: [logging](http://docs.gunicorn.org/en/latest/settings.html#logging)
 ```shell
-# run this cmd at top of git clone directory
+# run at top of git directory, as user 'oakridge'
+
+# develop run 
 gunicorn --reload --bind 0.0.0.0:2018 src.server:api
+
+# production check cfg
+gunicorn --check-config -c production.cfg.py src.server:api
+
+# production deploy
+gunicorn -c production.cfg.py src.server:api
 ```
 
 ### API usage
