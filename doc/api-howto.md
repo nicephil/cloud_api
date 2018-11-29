@@ -13,7 +13,60 @@ Parameters:
     key=<tmp hardcode as 'Oakridge'>
 ```
 Output:
-
+```http
+HTTP/1.1 200 OK
+Connection: close
+Date: Thu, 29 Nov 2018 19:56:40 GMT
+Server: gunicorn/19.9.0
+content-length: 600
+content-type: application/json; charset=UTF-8
+```
+```json
+{
+    "data": [
+        {
+            "active": 1,
+            "country": null,
+            "create_at": null,
+            "email": "bbb@oakridge.io",
+            "expire_at": null,
+            "first_login": 1,
+            "first_name": null,
+            "id": 10,
+            "inviter": null,
+            "last_name": null,
+            "phone": null,
+            "role_type": 3,
+            "state": 1,
+            "type": 1,
+            "username": null,
+            "version": 1532540761.0
+        },
+        {
+            "active": 1,
+            "country": null,
+            "create_at": null,
+            "email": "aaa@oakridge.io",
+            "expire_at": null,
+            "first_login": 1,
+            "first_name": null,
+            "id": 2,
+            "inviter": null,
+            "last_name": null,
+            "phone": null,
+            "role_type": 3,
+            "state": 1,
+            "type": 1,
+            "username": null,
+            "version": 1541061505.0
+        }
+    ],
+    "error": [
+        0,
+        ""
+    ]
+}
+```
 ## Get 1 entry from DB **user_info** table  
 API:
 ```shell
