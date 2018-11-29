@@ -115,4 +115,5 @@ content-type: application/json; charset=UTF-8
 }
 ```
 - Note:  
-    Sensitive field (**password**, **wechat_openid**, **user_label**) in **user_info** table are hided 
+    - Sensitive field (**password**, **wechat_openid**, **user_label**) in **user_info** table are hided  
+    - Try to play with parameter to see returned error ouput
