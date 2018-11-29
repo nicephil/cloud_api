@@ -1,4 +1,4 @@
-### run/stop gunicorn as http/https
+### run/stop gunicorn
 see gunicorn how-to: [logging](http://docs.gunicorn.org/en/latest/settings.html#logging)
 ```shell
 # run cmd at top of git directory, as user 'oakridge'
