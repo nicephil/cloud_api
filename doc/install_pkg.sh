@@ -1,6 +1,8 @@
 # required pkg
+# assume Centos 7.x
     yum install -y epel-release
     sudo yum install -y python2-pip
+    sudo yum install -y git
     sudo pip install --upgrade pip
     sudo pip install gunicorn
     sudo pip install falcon
