@@ -1,7 +1,7 @@
 ## Batch get administrators from DB **user_info** table
 API:
 ```shell
-$ http GET 'cloud.oakridge.vip:2018/user?org_id=14&page=0&page_size=10&sort_key=email&order=desc&key=Oakridge'
+$ http GET 'cloud.oakridge.vip:2018/user?org_id=14&page=0&page_size=2&sort_key=email&order=desc&key=Oakridge'
 ```
 Parameters:
 ```shell
