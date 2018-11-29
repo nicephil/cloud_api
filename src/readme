@@ -1,0 +1,6 @@
+Best practice:
+0. __init__.py, this made this directory a importable module
+1. server.py has all API's uri routing
+2. each uri handle should be put into one single .py file
+3. for common handy tool routine, put into util.py
+4. for complex tool object, make its own class in .py file, e.g: dbwrapper.py

@@ -1,0 +1,10 @@
+- MYSQL
+    mysqldump -u root -p --all-databases > alldb.sql
+    mysqldump -u root -p [db_name] > db_backup.sql
+    mysql -u root -p --one-database destdbname < alldatabases.sql
+    mysql -u root -p < alldatabases.sql
+
+
+ssl_certificate /etc/letsencrypt/live/cloud.oakridge.vip/fullchain.pem;
+ssl_certificate_key /etc/letsencrypt/live/cloud.oakridge.vip/privkey.pem;
+
