@@ -1,5 +1,9 @@
+Learn gunicorn how-to:
+[logging](http://docs.gunicorn.org/en/latest/settings.html#logging),
+[cfg](http://docs.gunicorn.org/en/stable/configure.html),
+[signal](http://docs.gunicorn.org/en/stable/signals.html)
+
 ### run/stop gunicorn
-see gunicorn how-to: [logging](http://docs.gunicorn.org/en/latest/settings.html#logging)
 ```shell
 # run cmd at top of git directory, as user 'oakridge'
 
