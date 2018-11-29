@@ -8,6 +8,7 @@ ps -ef | grep gunicorn
 
 # develop run 
 gunicorn --reload --bind 0.0.0.0:2018 src.server:api
+gunicorn -c dev.cfg.py src.server:api
 
 # production check cfg
 gunicorn --check-config -c production.cfg.py src.server:api
