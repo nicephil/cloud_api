@@ -14,8 +14,8 @@ def validate_batch_get_params (req, resp, resource, params):
             raise falcon.HTTPBadRequest('Bad request', '<%s> must be positive int' % i)
     if int(req.params['page_size']) > 1024:
         raise falcon.HTTPBadRequest('Bad request', 'page_size %s too big(max 200)' % req.params['page_size'])
-    if 'sort' not in req.params:
-        req.params['sort'] = 'id'   #default sort by id
+    if 'sort_key' not in req.params:
+        req.params['sort_key'] = 'id'   #default sort by id
     if 'order' not in req.params:
         req.params['order'] = 'ASC'   #default sort by id
 
@@ -42,7 +42,7 @@ class Admins (object):
                                 )
                             )
                         ) ORDER BY %s %s LIMIT %s,%s
-                      """ % (req.params['org_id'], req.params['sort'], req.params['order'], int(req.params['page']) * int(req.params['page_size']), req.params['page_size'])
+                      """ % (req.params['org_id'], req.params['sort_key'], req.params['order'], int(req.params['page']) * int(req.params['page_size']), req.params['page_size'])
 
                 dict_array = db.query_and_fetchall_json (sql, exclude_column=('password', 'wechat_openid', 'user_label'))
 
