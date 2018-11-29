@@ -4,6 +4,7 @@ Learn gunicorn how-to:
 [signal](http://docs.gunicorn.org/en/stable/signals.html)
 
 ### run/stop gunicorn
+sample gunicorn [cfgfile](https://github.com/benoitc/gunicorn/blob/master/examples/example_config.py)
 ```shell
 # run cmd at top of git directory, as user 'oakridge'
 
