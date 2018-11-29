@@ -1,4 +1,4 @@
-## Batch get administrators from DB **user_info** table
+### Batch get administrators from DB **user_info** table
 API:
 ```shell
 $ http GET 'https://cloud.oakridge.vip:2018/user?org_id=14&page=0&page_size=2&sort_key=email&order=desc&key=Oakridge'
@@ -67,7 +67,7 @@ content-type: application/json; charset=UTF-8
     ]
 }
 ```
-## Get 1 entry from DB **user_info** table  
+### Get 1 entry from DB **user_info** table  
 API:
 ```shell
 $ http GET 'https://cloud.oakridge.vip:2018/user/123?key=Oakridge'
